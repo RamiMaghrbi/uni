@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import styles from '../Login.module.css'; // Importing CSS module
+import styles from '../Login.module.css';
+import loginImage from '../Assets/Images/Aiu.jpg';
+import logoImage from '../Assets/Images/aiu-building.jpg';
 
 function LoginForm() {
     const [id, setId] = useState('');
@@ -7,25 +9,22 @@ function LoginForm() {
     const [rememberPassword, setRememberPassword] = useState(false);
 
     const handleLogin = () => {
-        // Handle login
+
     };
 
     return (
-        <div className={styles.loginPage}> {/* Use className from imported CSS module */}
-            <div className={styles.loginImage}> {/* Use className from imported CSS module */}
-                {/* Image content */}
+        <div className={styles.loginPage}>
+            <div className={styles.loginImage}>
+                <img src={loginImage} alt="Login background" />
             </div>
-            <div className={styles.loginForm}> {/* Use className from imported CSS module */}
+            <div className={styles.loginForm}>
+                <img src={logoImage} alt="Logo" className={styles.logo} />
                 <h2>Log In</h2>
                 <form onSubmit={handleLogin}>
-                    <label>
-                        ID:
-                        <input type="text" value={id} onChange={e => setId(e.target.value)} />
-                    </label>
-                    <label>
-                        Password:
-                        <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-                    </label>
+                    <label htmlFor="id">ID</label>
+                    <input type="text" id="id" value={id} onChange={e => setId(e.target.value)} />
+                    <label htmlFor="password">Password</label>
+                    <input type="password" id="password" value={password} onChange={e => setPassword(e.target.value)} />
                     <label>
                         <input type="checkbox" checked={rememberPassword} onChange={e => setRememberPassword(e.target.checked)} />
                         &nbsp;

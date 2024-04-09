@@ -1,0 +1,103 @@
+/* Login.module.css */
+
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f2ff;
+    /* Light blue color */
+}
+
+
+.loginImage {
+    flex: 1;
+}
+
+.loginImage img {
+    width: 100%;
+    height: auto;
+}
+
+.loginForm {
+    flex: 1;
+    max-width: 400px;
+    /* Set the maximum width of the form */
+    padding: 20px;
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    /* White color */
+    /* border-radius: 8px;  /* Remove rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+}
+
+
+.loginForm h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+    /* Black color */
+}
+
+.loginForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm label {
+    margin-bottom: 8px;
+    color: #000;
+    /* Black color */
+}
+
+.loginForm input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+}
+
+.loginForm button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease;  /* Remove hover effect */
+}
+
+.loginForm button:hover {
+    background-color: #0056b3;
+    /* Change button color on hover */
+}
+
+.loginForm a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    /* Black color */
+    margin-top: 8px;
+    display: block;
+}
+
+.loginForm a:hover {
+    text-decoration: underline;
+}
